@@ -16,16 +16,17 @@
     limitations under the License.
 -->
 <persistence version="2.0"
-   xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="
+             xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="
         http://java.sun.com/xml/ns/persistence
         http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-    <persistence-unit name="primary">
-      <!-- If you are running in a production environment, add a managed 
-         data source, this example data source is just for development and testing! -->
-      <!-- The datasource is deployed as WEB-INF/DVD-ds.xml, you
-         can find it in the source at src/main/webapp/WEB-INF/DVD-ds.xml -->
-      <jta-data-source>java:jboss/datasources/DVDDS</jta-data-source>
+    <persistence-unit name="primary" transaction-type="JTA">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <!-- If you are running in a production environment, add a managed
+           data source, this example data source is just for development and testing! -->
+        <!-- The datasource is deployed as WEB-INF/DVD-ds.xml, you
+           can find it in the source at src/main/webapp/WEB-INF/DVD-ds.xml -->
+        <jta-data-source>java:jboss/datasources/DVDDS</jta-data-source>
         <class>org.ninjav.dvd.model.Actor</class>
         <class>org.ninjav.dvd.model.Address</class>
         <class>org.ninjav.dvd.model.Category</class>
@@ -42,9 +43,9 @@
         <class>org.ninjav.dvd.model.Staff</class>
         <class>org.ninjav.dvd.model.Store</class>
         <properties>
-         <!-- Properties for Hibernate -->
-         <property name="hibernate.hbm2ddl.auto" value="update" />
-         <property name="hibernate.show_sql" value="false" />
-      </properties>
-   </persistence-unit>
+            <!-- Properties for Hibernate -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="false"/>
+        </properties>
+    </persistence-unit>
 </persistence>
