@@ -19,19 +19,30 @@
    or testing only. It uses H2, an in memory database that ships with JBoss 
    AS. -->
 <datasources xmlns="http://www.jboss.org/ironjacamar/schema"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
-   <!-- The datasource is bound into JNDI at this location. We reference 
-      this in META-INF/test-persistence.xml -->
-   <datasource jndi-name="java:jboss/datasources/DVDTestDS"
-      pool-name="DVD-test" enabled="true"
-      use-java-context="true">
-      <connection-url>jdbc:h2:mem:DVD-test;DB_CLOSE_DELAY=-1</connection-url>
-      <driver>h2</driver>
-      <security>
-         <user-name>sa</user-name>
-         <password>sa</password>
-      </security>
-   </datasource>
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
+    <!-- The datasource is bound into JNDI at this location. We reference
+       this in META-INF/test-persistence.xml -->
+    <datasource jndi-name="java:jboss/datasources/DVDTestDS"
+                pool-name="DVD-test" enabled="true"
+                use-java-context="true">
+        <!--
+        <connection-url>jdbc:h2:mem:DVD-test;DB_CLOSE_DELAY=-1</connection-url>
+        <driver>h2</driver>
+        <security>
+            <user-name>sa</user-name>
+            <password>sa</password>
+        </security>
+        -->
+
+        <!-- Perform selection tests against real database -->
+        <connection-url>jdbc:postgresql://196.30.208.42:5432/dvdrental</connection-url>
+        <driver>postgresql-9.2-1003.jdbc4.jar</driver>
+        <security>
+            <user-name>apickard</user-name>
+            <password>sunofabitch</password>
+        </security>
+
+    </datasource>
 </datasources>
  
