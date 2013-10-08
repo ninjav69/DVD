@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="DVD:war exploded">
+    <output-path>$PROJECT_DIR$/target/DVD</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="DVD/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="DVD" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
