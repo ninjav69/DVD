@@ -4,14 +4,14 @@
     <identifier-quote-string>&quot;</identifier-quote-string>
     <synchronize>true</synchronize>
     <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-    <jdbc-url>jdbc:postgresql://196.30.208.42:5432/dvdrental</jdbc-url>
-    <user-name>apickard</user-name>
+    <jdbc-url>jdbc:postgresql://192.168.0.1:5432/dvdrental</jdbc-url>
+    <user-name>ninjav</user-name>
     <user-password>dfd9dfdfdfc4dfc5dfccdfcbdfc8dfc3dfdedfc9dfc2</user-password>
     <schema-pattern>dvdrental.public</schema-pattern>
     <default-dialect>PostgreSQL</default-dialect>
     <libraries>
       <library>
-        <url>file://$USER_HOME$/java/postgresql-9.2-1003.jdbc4.jar</url>
+        <url>file:///media/5898ecfe-e2f8-4a54-867a-65cf1e9341fb/java/postgresql-9.2-1003.jdbc4.jar</url>
       </library>
     </libraries>
     <schema name="public" catalog="dvdrental"/>
