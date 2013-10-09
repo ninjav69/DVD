@@ -10,7 +10,7 @@
     <file path="/FilmActor.java" changelist="1507c0ce-95c8-4ec0-ad02-c54c2416a334" time="1381222192231" ignored="false" />
     <file path="/FilmCategory.java" changelist="1507c0ce-95c8-4ec0-ad02-c54c2416a334" time="1381222124888" ignored="false" />
     <file path="/pom.xml" changelist="1507c0ce-95c8-4ec0-ad02-c54c2416a334" time="1381235545995" ignored="false" />
-    <file path="/Dummy.txt" changelist="1507c0ce-95c8-4ec0-ad02-c54c2416a334" time="1381240033452" ignored="false" />
+    <file path="/Dummy.txt" changelist="1507c0ce-95c8-4ec0-ad02-c54c2416a334" time="1381298514496" ignored="false" />
     <file path="/arquillian.xml" changelist="1507c0ce-95c8-4ec0-ad02-c54c2416a334" time="1381224366793" ignored="false" />
     <file path="/ActorTest.java" changelist="1507c0ce-95c8-4ec0-ad02-c54c2416a334" time="1381225307064" ignored="false" />
     <file path="/test-ds.xml" changelist="1507c0ce-95c8-4ec0-ad02-c54c2416a334" time="1381225651230" ignored="false" />
@@ -86,7 +86,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Persistence/JavaeeElement:/b4d934e8/primary/DVD/jpa/JPA/PersistenceModel" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Persistence/JavaeeElement:/b4d934e8/primary/DVD/jpa/JPA/PersistenceModel" pinned="false" current="true" current-in-tab="true">
         <entry file="uml://Persistence/JavaeeElement:/b4d934e8/primary/DVD/jpa/JPA/PersistenceModel">
           <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
@@ -131,11 +131,11 @@
                   <point x="0.0" y="0.0" />
                   <point x="0.0" y="0.0" />
                 </edge>
-                <edge source="Category#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Category.java" target="FilmCategory#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/FilmCategory.java">
+                <edge source="Address#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Address.java" target="Staff#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Staff.java">
                   <point x="0.0" y="0.0" />
                   <point x="0.0" y="0.0" />
                 </edge>
-                <edge source="Address#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Address.java" target="Staff#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Staff.java">
+                <edge source="Category#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Category.java" target="FilmCategory#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/FilmCategory.java">
                   <point x="0.0" y="0.0" />
                   <point x="0.0" y="0.0" />
                 </edge>
@@ -184,22 +184,15 @@
                   <point x="0.0" y="0.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.9829816201497618" x="234.15512465373962" y="756.1551246537397" />
-              <SelectedNodes />
+              <settings layout="Hierarchic Group" zoom="0.9829816201497618" x="724.5" y="961.652354570637" />
+              <SelectedNodes>
+                <node>Country#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Country.java</node>
+              </SelectedNodes>
               <Categories>
                 <Category>Properties</Category>
                 <Category>Embeddables</Category>
                 <Category>Superclasses</Category>
               </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -302,6 +295,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/arquillian.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -399,6 +393,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="DVD" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DVD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DVD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -602,7 +606,11 @@
       <created>1381240040576</created>
       <updated>1381240040576</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge Origin&#10;&#10;Merge with Primefaces example.">
+      <created>1381298517447</created>
+      <updated>1381298517447</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -610,9 +618,9 @@
     <editor active="false" />
     <layout>
       <window_info id="JPA Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55496264" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20176893" sideWeight="0.3191035" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20176893" sideWeight="0.4759872" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -631,7 +639,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21448314" sideWeight="0.34578443" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20176893" sideWeight="0.3511206" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20176893" sideWeight="0.5240128" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34044823" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -682,7 +690,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Intellij JPA console support&#10;&#10;Modify pom.xml in order to support the Hibernate Persistence&#10;provider within IntelliJ JPA console. JPA and HQL queries&#10;can be run inside the IDE." />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge Origin&#10;&#10;Merge with Primefaces example." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -698,6 +706,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Add Arquillian Support&#10;&#10;Modify arquillian.xml and create a Test class for testing&#10;JPA queries on data model." />
     <MESSAGE value="Add Intellij JPA console support&#10;&#10;Modify pom.xml in order to support the Hibernate Persistence&#10;provider within IntelliJ JPA console. JPA and HQL queries&#10;can be run inside the IDE." />
+    <MESSAGE value="Merge Origin&#10;&#10;Merge with Primefaces example." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -805,6 +814,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="uml://Persistence/JavaeeElement:/b4d934e8/primary/DVD/jpa/JPA/PersistenceModel">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -849,11 +865,11 @@
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="Category#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Category.java" target="FilmCategory#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/FilmCategory.java">
+            <edge source="Address#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Address.java" target="Staff#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Staff.java">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="Address#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Address.java" target="Staff#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Staff.java">
+            <edge source="Category#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Category.java" target="FilmCategory#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/FilmCategory.java">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
@@ -902,20 +918,15 @@
               <point x="0.0" y="0.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.9829816201497618" x="234.15512465373962" y="756.1551246537397" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="0.9829816201497618" x="724.5" y="961.652354570637" />
+          <SelectedNodes>
+            <node>Country#file:///home/apickard/personal-workspace/DVD/src/main/java/org/ninjav/dvd/model/Country.java</node>
+          </SelectedNodes>
           <Categories>
             <Category>Properties</Category>
             <Category>Embeddables</Category>
             <Category>Superclasses</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
