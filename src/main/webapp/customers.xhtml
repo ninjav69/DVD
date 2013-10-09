@@ -20,10 +20,10 @@
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:p="http://primefaces.org/ui"
-                template="/WEB-INF/templates/default.xhtml">
-    <ui:define name="content">
-        <h1>Welcome to DVD!</h1>
+                template="/WEB-INF/templates/master-detail.xhtml">
+    <ui:define name="master">
         <h:form id="form">
+            <h1>DVD Customers</h1>
             <p:growl id="growl" showDetail="true"/>
 
             <p:dataTable var="customer" value="#{customers}"
@@ -32,7 +32,7 @@
                          paginator="true" rows="20">
 
                 <p:ajax event="rowSelect" listener="#{customerController.onRowSelect}"
-                        update=":form:growl :form:selectedCustomer"/>
+                        update=":form:growl :selectedCustomer"/>
 
                 <p:column headerText="ID" rendered="false">
                     <h:outputText value="#{customer.customerId}"/>
@@ -47,12 +47,21 @@
                 </p:column>
 
             </p:dataTable>
+        </h:form>
 
-            <p:panelGrid id="selectedCustomer" columns="2" style="width: 100%">
+
+    </ui:define>
+
+    <ui:define name="detail">
+        <p:outputPanel id="selectedCustomer">
+            <p:panelGrid columns="2" style="width: 100%"
+                         rendered="#{not empty customerController.selectedCustomer}">
                 <p:outputLabel value="First name"/>
                 <h:outputText value="#{customerController.selectedCustomer.firstName}"/>
                 <p:outputLabel value="Last name"/>
                 <h:outputText value="#{customerController.selectedCustomer.lastName}"/>
+                <p:outputLabel value="e-Mail:"/>
+                <h:outputText value="#{customerController.selectedCustomer.email}"/>
                 <p:outputLabel value="Address"/>
                 <h:outputText value="#{customerController.selectedCustomer.addressByAddressId.address}"/>
                 <p:outputLabel value=""/>
@@ -61,6 +70,10 @@
                 <h:outputText value="#{customerController.selectedCustomer.addressByAddressId.cityByCityId.city}"/>
             </p:panelGrid>
 
-        </h:form>
+        </p:outputPanel>
+
+        <p:outputLabel value="Select a customer." rendered="#{empty customerController.selectedCustomer}"/>
     </ui:define>
+
+
 </ui:composition>
